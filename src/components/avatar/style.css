@@ -1,14 +1,14 @@
 .avatarStyleText {
-  color: "blue";
+  color: blue;
 }
 .avatarStyleImage {
-  width: "80px";
-  height: "80px";
-  border-radius: "50%";
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 
 .divStyleContainer {
-  display: "flex";
-  flex-direction: "column";
-  align-items: "center";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
