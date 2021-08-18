@@ -9,7 +9,7 @@ const Avatar = () => {
           src="https://lh3.googleusercontent.com/a-/AOh14GjvmNlsJvvkTdNX-FPatx-jn-kyakLDmGNvZ5Kq=s96-c"
           alt="Avatar"
         />
-        <p className="avatarStyleText">Profile Name</p>
+        <p className="avatarStyleText">@Profile Name</p>
       </div>
     </>
   );

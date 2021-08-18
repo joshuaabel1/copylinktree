@@ -1,0 +1,13 @@
+.addLinkContainer {
+  display: flex;
+  justify-content: center;
+}
+.addLinkButton {
+  height: 42px;
+  background: #7325ef;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  color: #fff;
+  line-height: 14px;
+  width: 30%;
+}
