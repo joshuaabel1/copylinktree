@@ -1,0 +1,43 @@
+const styleI = {
+            
+    backgroundColor : '#ac2bac'
+}
+const styleL = {
+    
+    backgroundColor : '#0d6efd'
+}
+
+const styleW = {
+    
+    backgroundColor : '#'
+}
+const styleG = {
+    
+    backgroundColor : '#'
+}
+const styleP = {
+    
+    backgroundColor : '#'
+}
+
+
+return(
+    <div className="mt-5">
+        <table>
+            <thead>
+                <tr>perfil</tr>
+                <tr><i className="bi bi-person-circle" style={styleP}></i></tr>
+                <tr ><i className="bi bi-linkedin" style={styleL}></i></tr>
+                <tr ><i className="bi bi-github" style={styleG}></i></tr>
+                <tr><i className="bi bi-whatsapp" style={styleW}></i></tr>
+                <tr><i className="bi bi-instagram" style={styleI}></i></tr>
+            </thead>
+        </table>
+    </div>
+);
+}
+<li><a href="#"><i className="bi bi-github" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i className="bi bi-whatsapp" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i className="bi bi-person-circle" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i className="bi bi-linkedin" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i className="bi bi-instagram" aria-hidden="true"></i></a></li>
