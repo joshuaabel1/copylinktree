@@ -1,15 +1,25 @@
 import "./style.css";
+import { getUsuario } from "../../Api/usuarios";
+import { useEffect } from "react";
+import { useState } from "react";
 
 const Avatar = () => {
+  const [usuario, setUsuario] = useState(null);
+
+  useEffect(() => {
+    getUsuario().then((usuario) => setUsuario(usuario));
+  }, []);
+  if (!usuario) {
+    return <p>Cargando</p>;
+  }
   return (
     <>
       <div className="divStyleContainer">
-        <img
-          className="avatarStyleImage"
-          src="https://lh3.googleusercontent.com/a-/AOh14GjvmNlsJvvkTdNX-FPatx-jn-kyakLDmGNvZ5Kq=s96-c"
-          alt="Avatar"
-        />
-        <p className="avatarStyleText">@Profile Name</p>
+        <img className="avatarStyleImage" src={usuario.avatar} alt="Avatar" />
+        <p className="avatarStyleText">
+          {usuario.first_name} {usuario.last_name}
+        </p>
+        <p className="avatarStyleText">{usuario.email}</p>
       </div>
     </>
   );
