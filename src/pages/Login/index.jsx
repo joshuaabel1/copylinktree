@@ -1,7 +1,14 @@
+import  Spinner  from "react-bootstrap/Spinner"
+
+
+
 export default function LoginPageWithGoogle(){
     return (
-        <div className="login-page">
-            LOGIN
-        </div>
+        
+        
+            <Spinner className="spinner-border text-primary" animation="border" role="status">
+                <span className="visually-hidden"></span>
+            </Spinner>
+        
     )
 }
